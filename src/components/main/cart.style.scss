@@ -1,0 +1,231 @@
+.cart {
+    background-image: url('https://img3.akspic.ru/crops/8/5/9/9/4/149958/149958-otrazhenie-nacionalnogo_parka_keulat-voda-torresdelpajne-otel_las_torres_patagonii-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 88.8vh;
+    position: relative;
+
+    &__container {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+
+    &__img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 166, 0);
+        -webkit-box-shadow: 40px 22px 8px -2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 40px 22px 8px -2px rgba(0, 0, 0, 0.2);
+        box-shadow: 40px 22px 8px -2px rgba(0, 0, 0, 0.2);
+        margin: 3px;
+
+
+        @media screen and (max-width:1365px) {
+            width: 250px;
+            height: 250px;
+        }
+
+
+        @media screen and (max-width:1023px) {
+            width: 170px;
+            height: 170px;
+        }
+
+        @media screen and (max-width:767px) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+
+    &__box {
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #000000;
+        border-radius: 7px;
+        border: 1px solid rgb(255, 166, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+        @media screen and (max-width:1023px) {
+            width: 200px;
+        }
+
+        @media screen and (max-width:1365px) {
+            width: 250px;
+        }
+
+        @media screen and (max-width:767px) {
+            width: 150px;
+        }
+
+
+    }
+
+    &__btn {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 15px;
+        color: rgb(255, 166, 0);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 166, 0);
+        color: rgb(255, 166, 0);
+    }
+
+
+    &__inf {
+        color: rgb(255, 166, 0);
+    }
+
+    &__total {
+        margin-top: 15px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    &__totalPrice {
+        margin: 0;
+        color: #f0f0f0;
+        -webkit-animation: tracking-in-contract-bck 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	    animation: tracking-in-contract-bck 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        user-select: none;
+    }
+
+    @-webkit-keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+
+    &__options {
+        display: flex;
+        flex-flow: column;
+        margin: 5%;
+    }
+
+    &__makeOrder {
+        position: absolute;
+        top: 0;
+        margin: 10px;
+        width: 120px;
+        height: 40px;
+        border-radius: 11px;
+        margin: 5px;
+        border-radius: 15px;
+        color: rgb(255, 166, 0);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 166, 0);
+
+    }
+}
+
+.total {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+.popup {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes scale-up-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes scale-up-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+    }
+}

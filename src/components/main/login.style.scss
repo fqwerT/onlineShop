@@ -1,0 +1,107 @@
+.login__container {
+    margin: 10px;
+    align-content: center;
+    flex-direction: column;
+
+
+    .login__box {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        margin: 10px;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .login__label {
+        margin: 10px;
+    }
+
+    .login__btnBox {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login__btn {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #000;
+        color: rgb(255, 168, 70);
+    }
+
+    .login__input {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #000;
+        color: #f0f0f0;
+        overflow: hidden;
+    }
+
+}
+
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+
+.message {
+    box-shadow: -4px 11px 8px 10px rgba(0, 0, 0, 0.39);
+    width: 350px;
+    height: 60px;
+    position: absolute;
+    background-color: #f0f0f0;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.messageInfo {
+    color: green;
+    margin: 10px;
+
+
+}
+
+
+@-webkit-keyframes scale-up-right {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+  }
+  @keyframes scale-up-right {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+  }

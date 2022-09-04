@@ -5,9 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://img3.akspic.ru/crops/8/5/9/9/4/149958/149958-otrazhenie-nacionalnogo_parka_keulat-voda-torresdelpajne-otel_las_torres_patagonii-1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

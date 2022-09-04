@@ -1,0 +1,50 @@
+{
+    "itemList": [
+        {
+            "id": 1,
+            "type": "HANDBALL SPEZIAL",
+            "brand": "Adidas",
+            "price": "2300",
+            "itemUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b005f131d9fa4b389d88adfe010c1363_9366/Krossovki_Handball_Spezial_seryj_GZ4761_01_standard.jpg",
+            "logoUrl": "https://seeklogo.com/images/A/adidas-originals-since-1949-logo-D2BC0809DF-seeklogo.com.png",
+            "matherial": "Кожа",
+            "color": "серый",
+            "amount" : 1
+        },
+        {
+            "id": 2,
+            "type": "Rieker 17310/15",
+            "brand": "Reker",
+            "price": "3000",
+            "itemUrl": "https://www.rieker.com/fileadmin/_processed_/7/6/csm_product_image_17310-15_h1_b29e3887b3.jpg",
+            "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Rieker_Logo.svg/284px-Rieker_Logo.svg.png?20190924181615",
+            "matherial": "Нубук",
+            "color": "синий",
+            "amount" : 1
+        },
+        {
+            "id": 3,
+            "name": "AIR MAX 270 ",
+            "brand": "Nike",
+            "price": "2650",
+            "itemUrl": "https://avatars.mds.yandex.net/get-goods_pic/5671541/pic502a549ec2390b24ee67d10b211f32af/500x500",
+            "logoUrl": "https://seeklogo.com/images/N/Nike-logo-DBEB111F03-seeklogo.com.png",
+            "matherial": "Текстиль",
+            "color": "черный",
+            "amount" : 1
+        },
+        {
+            "id": 4,
+            "type": "Zig Kinetica II",
+            "brand": "Reebok",
+            "price": "4650",
+            "itemUrl": "https://assets.reebok.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f2f099c37d54e81819eacb800b84b08_9366/Krossovki_Zig_Kinetica_II_Grow_belyj_H00074_02_standard.jpg",
+            "logoUrl": "https://seeklogo.com/images/R/Reebok-logo-2A7CDF4B3F-seeklogo.com.png",
+            "matherial": "Резина",
+            "color": "серый",
+            "amount" : 1
+            
+        }
+    ]
+    
+}

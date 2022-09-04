@@ -1,0 +1,187 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #000;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .5);
+    width: 300px;
+
+    &__btn {
+        cursor: pointer;
+        color: #f0f0f0;
+        margin-left: 10%;
+        user-select: none;
+    }
+
+    &__selectContent {
+        border:1px solid #000;
+        width: inherit;
+        
+    }
+
+
+    @-webkit-keyframes scale-up-bottom {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+      }
+      @keyframes scale-up-bottom {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+      }
+
+
+    &__item {
+        cursor: pointer;
+        color: #f0f0f0;
+        font-size: 18px;
+        user-select: none;
+        color: #f0f0f0;
+        line-height: 10px;
+        border: 1px solid #000;
+        padding-left: 10%;
+        -webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        &:hover {
+            color: #000;
+            background-color: #f0f0f0;
+           
+        }
+    }
+
+       
+       
+
+    @-webkit-keyframes tracking-in-contract-bck-top {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px) translateY(-300px);
+                  transform: translateZ(400px) translateY(-300px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0) translateY(0);
+                  transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract-bck-top {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px) translateY(-300px);
+                  transform: translateZ(400px) translateY(-300px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0) translateY(0);
+                  transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
+
+    &__brandName {
+        display: flex;
+        column-gap: 20px;
+        flex-direction: row;
+        flex-flow: row;
+    }
+
+
+   
+       
+    
+
+    &__price {
+        width: inherit;
+        height: 60px;
+        border: 1px solid #000;
+    }
+
+    &__priceValue {
+        height: 40px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid #f0f0f0;
+        padding-left: 10px;
+        margin-left: 10%;
+        margin-top: 10px;
+        @media screen and (max-width:767px) {}
+    }
+
+    &__matherial {
+        width: inherit;
+        border: 1px solid #000;
+        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .5);
+
+    }
+
+    &__matherialBtn {
+        color: #f0f0f0;
+        margin-left: 10%;
+        cursor: pointer;
+    }
+
+    &__matherialBody {
+        border: 1px solid #000;
+    }
+
+    &__bodyItem {
+        color: #f0f0f0;
+        font-size: 18px;
+        user-select: none;
+        line-height: 10px;
+        border: 1px solid #000;
+        padding-left: 10%;
+        -webkit-animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        &:hover {
+            color: #000;
+            background-color: #f0f0f0;
+        }
+    }
+
+    &__clearFilter {
+        &:hover {
+            color:rgb(255, 49, 49);
+        }
+    }
+
+    &__buttonTittle {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+}
+
+::placeholder {
+    color: #f0f0f0;
+}
+
