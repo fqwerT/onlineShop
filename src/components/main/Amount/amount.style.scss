@@ -1,0 +1,30 @@
+.btn__controls {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 166, 0);
+
+}
+
+.btn__btn {
+    border-radius: 8px;
+    font-size: 17px;
+    margin: 5px;
+    background-color: #000;
+    border: 1px solid rgb(255, 166, 0);
+    color: rgb(255, 166, 0);
+    user-select: none;
+}
+
+.btn__btn:hover {
+    transform: scale(1.2);
+}
+
+.btn__result {
+    color: rgb(255, 166, 0);
+    ;
+}

@@ -5,8 +5,9 @@ import Login from "./OrderLogin";
 import Location from "./Orderlocation";
 import Payment from "./OrderPayment";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import { Link } from "react-router-dom";
 
-function InfoOrder({ cart, setShowOrder, showOrder }) {
+function Order({ cart, setShowOrder, showOrder }) {
   const [showDopInfo, setShowDopInfo] = useState(false);
   const [info, setInfo] = useState(true);
   const [login, setLogin] = useState(false);
@@ -100,12 +101,10 @@ function InfoOrder({ cart, setShowOrder, showOrder }) {
               >
                 Оплата
               </button>
-              <button
-                onClick={() => setShowOrder(!showOrder)}
-                className="order__close"
-              >
-                закрыть
-              </button>
+
+              <Link to="/main" className="order__closeBtn1">
+                Закрыть
+              </Link>
             </div>
             <div className="order__content">
               {info && (
@@ -123,8 +122,7 @@ function InfoOrder({ cart, setShowOrder, showOrder }) {
                   <button
                     className="order__closeBtn"
                     onClick={() => HandleSwitcher()}
-                  >
-                    Завершить
+                  >Завершить
                   </button>
                 </>
               )}
@@ -139,7 +137,7 @@ function InfoOrder({ cart, setShowOrder, showOrder }) {
                 </>
               )}
 
-              {success && <h1 className="successMsg">Заявка успешно сформирована!</h1>}
+              {success && <h1 className="successMsg">Заявка сформирована!</h1>}
             </div>
           </div>
         </div>
@@ -148,4 +146,4 @@ function InfoOrder({ cart, setShowOrder, showOrder }) {
   );
 }
 
-export default InfoOrder;
+export default Order;

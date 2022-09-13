@@ -9,7 +9,10 @@
             "logoUrl": "https://seeklogo.com/images/A/adidas-originals-since-1949-logo-D2BC0809DF-seeklogo.com.png",
             "matherial": "Кожа",
             "color": "серый",
-            "amount" : 1
+            "amount" : 1,
+            "title":"Быстрая доставка по качеству все отлично",
+            "tittleUserName":"user697",
+            "userAvatar":"https://cdn-icons-png.flaticon.com/512/3899/3899618.png"
         },
         {
             "id": 2,
@@ -20,18 +23,24 @@
             "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Rieker_Logo.svg/284px-Rieker_Logo.svg.png?20190924181615",
             "matherial": "Нубук",
             "color": "синий",
-            "amount" : 1
+            "amount" : 1,
+            "title":"Качество на высоком уровне не пожалел о покупке",
+            "tittleUserName":"user867",
+            "userAvatar":"https://cdn-icons-png.flaticon.com/512/3899/3899618.png"
         },
         {
             "id": 3,
-            "name": "AIR MAX 270 ",
+            "type": "AIR MAX 270",
             "brand": "Nike",
             "price": "2650",
             "itemUrl": "https://avatars.mds.yandex.net/get-goods_pic/5671541/pic502a549ec2390b24ee67d10b211f32af/500x500",
             "logoUrl": "https://seeklogo.com/images/N/Nike-logo-DBEB111F03-seeklogo.com.png",
             "matherial": "Текстиль",
             "color": "черный",
-            "amount" : 1
+            "amount" : 1,
+            "title":"Товар не оправдал ожиданий",
+            "tittleUserName":"user367",
+            "userAvatar":"https://cdn-icons-png.flaticon.com/512/1177/1177568.png"
         },
         {
             "id": 4,
@@ -42,7 +51,10 @@
             "logoUrl": "https://seeklogo.com/images/R/Reebok-logo-2A7CDF4B3F-seeklogo.com.png",
             "matherial": "Резина",
             "color": "серый",
-            "amount" : 1
+            "amount" : 1,
+            "title":"Товар не оправдал ожиданий",
+            "tittleUserName":"user567",
+            "userAvatar":"https://cdn-icons-png.flaticon.com/512/552/552721.png"
             
         }
     ]

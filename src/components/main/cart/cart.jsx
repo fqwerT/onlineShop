@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./cart.style.scss";
-import Order from "./Order.jsx";
+import Order from "../order/Order";
+import Amount from "../Amount/Amount";
 
-const Cart = ({ cart, setCart, handleChange}) => {
+const Cart = ({ cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
-  const [showOrder, setShowOrder] = useState(false);
 
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);
@@ -31,19 +31,7 @@ const Cart = ({ cart, setCart, handleChange}) => {
             <div className="cart__options">
               <h3 className="cart__inf">{item.type}</h3>
               <div>
-                <button
-                  className="cart__btn"
-                  onClick={() => handleChange(item, 1)}
-                >
-                  +
-                </button>
-                <span className="cart__inf">{item.amount}</span>
-                <button
-                  className="cart__btn"
-                  onClick={() => handleChange(item, -1)}
-                >
-                  -
-                </button>
+                <Amount />
               </div>
               <div>
                 <h3 className="cart__inf">Цена: {item.price}</h3>
@@ -51,27 +39,15 @@ const Cart = ({ cart, setCart, handleChange}) => {
                   className="cart__btn"
                   onClick={() => handleRemove(item.id)}
                 >
-                  Remove
+                  Убрать
                 </button>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="cart__total">
-        <h3 className="cart__totalPrice">Общая цена корзины </h3>
-        <h3 className="cart__totalPrice">- {price} Руб</h3>
-      </div>
-      <button className='cart__makeOrder'onClick={() => setShowOrder(!showOrder)}>Оформить заказ</button>
-      {showOrder && (   
-          <Order
-            cart={cart}
-            setShowOrder={setShowOrder}
-            showOrder={showOrder}
-          />
-      )}
     </article>
   );
 };
 
-export default Cart;
+export { Cart };

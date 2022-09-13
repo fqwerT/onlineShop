@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "./components/header/header.jsx";
-import Catalog from "./components/main/catalog.jsx";
+import Catalog from "./components/main/products/catalog.jsx";
 import { useState, useMemo, useEffect } from "react";
 import axios from "axios";
-import Cart from "./components/main/cart.jsx";
+import { Cart } from "./components/main/cart/cart.jsx";
+import { Routes, Route, Link } from "react-router-dom";
+import Order from "./components/main/order/Order.jsx";
 
 function App() {
   const [selectFilter, setSelectFilter] = useState("");
@@ -22,7 +24,6 @@ function App() {
     fetchItems();
   }, []);
 
-
   const handleChange = (item, d) => {
     const ind = cart.indexOf(item);
     const arr = cart;
@@ -36,7 +37,6 @@ function App() {
     if (cart.indexOf(item) !== -1) return;
     setCart([...cart, item]);
   };
-
 
   useEffect(() => {}, [selectFilter]);
   useEffect(() => {}, [searchPriceFilter]);
@@ -71,26 +71,53 @@ function App() {
     <div className="App">
       <Header setShow={setShow} size={cart.length} />
       <main>
-      {show ? (
-        <Catalog
-          itemList={filter}
-          selectFilter={selectFilter}
-          setSelectFilter={setSelectFilter}
-          matherialFilter={matherialFilter}
-          setMatherialFilter={setMatherialFilter}
-          searchPriceFilter={searchPriceFilter}
-          setSearchPriceFilter={setSearchPriceFilter}
-          cart={cart}
-          setCVarts={setCart}
-          HandleClick={HandleClick}
-          rating={rating}
-          setRating={setRating}/>
-
-          
-
-          ) : (
-            <Cart cart={cart} setCart={setCart} handleChange={handleChange} rating={rating} />
-      )}
+        <div className="main__linkBox">
+          <div className="main__links">
+            {" "}
+            <Link to="/main" className="main__link">
+              Каталог
+            </Link>
+            <Link to="/cart" className="main__link">
+              Корзина
+            </Link>
+            <Link to="/order" className="main__link">
+              Оформить заказ
+            </Link>
+          </div>
+        </div>
+        <Routes>
+          <Route
+            path="/main"
+            element={
+              <Catalog
+                itemList={filter}
+                selectFilter={selectFilter}
+                setSelectFilter={setSelectFilter}
+                matherialFilter={matherialFilter}
+                setMatherialFilter={setMatherialFilter}
+                searchPriceFilter={searchPriceFilter}
+                setSearchPriceFilter={setSearchPriceFilter}
+                cart={cart}
+                setCVarts={setCart}
+                HandleClick={HandleClick}
+                rating={rating}
+                setRating={setRating}
+              />
+            }
+          ></Route>
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                setCart={setCart}
+                handleChange={handleChange}
+                rating={rating}
+              />
+            }
+          ></Route>
+          <Route path="/order" element={<Order cart={cart} />}></Route>
+        </Routes>
       </main>
     </div>
   );

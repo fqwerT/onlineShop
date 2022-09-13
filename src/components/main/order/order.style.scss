@@ -1,9 +1,8 @@
 .order {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+    
+    width: 99.99vw;
+    height: 85vh;
     background-color: rgba(0, 0, 0, 0.63);
-    top: 0;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -32,6 +31,7 @@
 
 
     &__body {
+       
         height: 500px;
         width: 500px;
         background-color: #f0f0f0;
@@ -79,9 +79,27 @@
         color: rgb(255, 166, 0);
         background-color: rgb(0, 0, 0);
         border: 1px solid rgb(255, 166, 0);
+       
+        
 
     }
 
+
+
+    &__closeBtn1 { 
+        width:110px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding: 10px;
+        border-radius: 15px;
+        color: rgb(255, 166, 0);
+        background-color: rgb(0, 0, 0);
+        border: 1px solid rgb(255, 166, 0);
+        text-decoration: none;
+    }
+
+    
 }
 
 
@@ -187,3 +205,6 @@
               transform: translateY(60px);
     }
   }
+
+
+ 
