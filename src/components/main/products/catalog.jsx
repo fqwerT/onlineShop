@@ -39,7 +39,7 @@ function Catalog({
       
       <div className="container__catalog">
         {itemList.map((item) => (
-          <div className="container__item">
+          <div className="container__item" key={item.price}>
             <img
               src={item.itemUrl}
               className="container__illustration"

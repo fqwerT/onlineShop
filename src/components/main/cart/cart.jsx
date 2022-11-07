@@ -22,6 +22,8 @@ const Cart = ({ cart, setCart, handleChange }) => {
     handlePrice();
   });
 
+  console.log(cart)
+
   return (
     <article className="cart">
       <div className="cart__container">
@@ -31,7 +33,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
             <div className="cart__options">
               <h3 className="cart__inf">{item.type}</h3>
               <div>
-                <Amount />
+                <Amount key={item.id}/>
               </div>
               <div>
                 <h3 className="cart__inf">Цена: {item.price}</h3>

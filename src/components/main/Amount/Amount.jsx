@@ -2,8 +2,8 @@ import { connect } from "react-redux";
 import "./amount.style.scss";
 import { IncrementAmount, DecrementAmount } from "../../../redux/actions";
 
-function Amount(props) {
-  console.log(props);
+function Amount(props, price) {
+  console.log(price);
   return (
     <div className="btn__controls">
       <button className="btn__btn" onClick={props.onDecrementAmounts}>
@@ -27,7 +27,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     onIncrementAmounts: () => dispatch(IncrementAmount()),
-    onDecrementAmounts: () => dispatch(DecrementAmount())
+    onDecrementAmounts: () => dispatch(DecrementAmount()),
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Amount);
